@@ -1,5 +1,5 @@
-import React from 'react'
-//import axios from 'axios';
+import React from 'react';
+import './App.scss';
 export default function App() {
     async function data (){
         const response = await fetch('./data.json');
@@ -7,7 +7,7 @@ export default function App() {
     }
     data();
     return (
-        <div className="main">
+        <div className='root'>
             <div className="logo"></div>
             <div className="content"></div>
             <div className="footer"></div>            
