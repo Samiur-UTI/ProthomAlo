@@ -1,6 +1,4 @@
 .root{
-    position: relative;
-    overflow: hidden;
     .logo{
         display: block;
         height: 7vh;
@@ -34,9 +32,11 @@
             .news-item{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                border:2px solid #995a76;
+                grid-auto-rows: 1fr;
+                border:1px solid #995a76;
                 .news-general{
-                    border:2px solid #db4b6a;
+                    border:2px solid violet;
+                    
                 }
             }
         }
