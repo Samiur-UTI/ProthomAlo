@@ -43,7 +43,15 @@ export default function App() {
                     </div>
                 </div>
                 <div className='content-item-add'>
-
+                    <div className='add'>
+                            
+                    </div>
+                    <div className='add'>
+                            
+                    </div>
+                    <div className='add'>
+                            
+                    </div>
                 </div>
             </div>
             <div className="footer"></div>            
