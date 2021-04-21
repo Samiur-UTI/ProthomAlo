@@ -1,23 +1,52 @@
 .root{
     position: relative;
-
+    overflow: visible;
     .logo{
         display: block;
         height: 7vh;
         background-image: url('prothom-alo-logo-D4FA48A860-seeklogo.com.png');
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: 150px;
         background-position:center;
         padding-top: 10px;
     }
     .content{
         display: grid;
-        height: 65vh;
+        height: 75vh;
         border: 2px solid grey;
+        grid-template-columns: 3fr 1fr;
+
+        .content-item-news {
+            display: grid;
+            grid-template-rows: 1.5fr 1fr 1fr 1fr;
+            border:2px solid #806313;
+            .news-item-important{
+                border:2px solid #806313;
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                .breaking-news{
+                    border:2px solid #433c4d;
+                }
+                .notso-breaking-news{
+                    border:2px solid #bd6fb6;
+                }
+            }
+            .news-item{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                border:2px solid #995a76;
+                .news-general{
+                    border:2px solid #db4b6a;
+                }
+            }
+        }
+        .content-item-add {
+            border:2px solid #fcba03;
+        }
     }
     .footer{
         display: block;
-        height: 20vh;
+        height: 15vh;
         border: 2px solid blue;
     }
 }
