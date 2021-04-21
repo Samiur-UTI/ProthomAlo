@@ -24,35 +24,9 @@ export default function App() {
         <div className='root'>
             <div className="logo"></div>
             <div className="content">
-                <div className='content-item-news'>
-                    <div className='news-item-important'>
-                        <div className='breaking-news'>
-
-                        </div>
-                        <div className='notso-breaking-news'>
-
-                        </div>
-
-                    </div>
-                    <div className='news-item'>
-                        {data.slice(0,9).map(item => (
-                             <div className='news-general'>
-                                 <NewsItem {...item}/>
-                             </div>
-                        ))}
-                    </div>
-                </div>
-                <div className='content-item-add'>
-                    <div className='add'>
-                            
-                    </div>
-                    <div className='add'>
-                            
-                    </div>
-                    <div className='add'>
-                            
-                    </div>
-                </div>
+                {data.slice(0,9).map(item => (
+                    <NewsItem {...item}/>
+                ))}
             </div>
             <div className="footer"></div>            
         </div>
