@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import News from './components/news-item/news.component';
+import News from './components/news/news.component';
 import './App.scss';
 export default function App() {
     const [data,setData] = useState([]);
