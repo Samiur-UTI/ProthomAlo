@@ -20,13 +20,24 @@ export default function App() {
         };
        changeData();
     },[]);
-    return (
-        <div className='root'>
-            <div className="logo"></div>
-                <div className="content">
-                    <News data={data}/>
-                </div>
-            <div className="footer"></div>            
-        </div>
+    if(data.length !== 0){
+        return (
+            <div className='root'>
+                <div className="logo"></div>
+                    <div className="content">
+                        <News data={data}/>
+                    </div>
+                <div className="footer"></div>            
+            </div>
+        )
+    }
+    return(
+            <div className='root'>
+                <div className="logo"></div>
+                    <div className="content">
+                        <h2 className='loading'>News</h2>
+                    </div>
+                <div className="footer"></div>            
+            </div>
     )
 }

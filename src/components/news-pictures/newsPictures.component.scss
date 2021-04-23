@@ -1,0 +1,15 @@
+.with-pictures{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    &:hover{
+        background-color: #f7f7f7;
+    }
+    .image{
+        padding-top: 20px;
+        padding-left: 10px;
+        max-width: 100%;
+    }
+    .picture-title{
+        color:black;
+    }
+}

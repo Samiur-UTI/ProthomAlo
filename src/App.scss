@@ -16,6 +16,11 @@
         @media screen and (max-width:480px) {
             grid-template-rows: 250px;
         }
+        .loading{
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+        }
     }
     .footer{
         display: block;

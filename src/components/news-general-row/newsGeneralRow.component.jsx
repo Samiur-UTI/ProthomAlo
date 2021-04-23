@@ -1,5 +1,5 @@
 import React from 'react'
-import NewsGeneral from './newsGeneral.component';
+import NewsGeneral from '../news-general/newsGeneral.component';
 import './newsGeneralRow.component.scss'
 export default function NewsRow({data}) {
     let row='row';
