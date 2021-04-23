@@ -4,7 +4,7 @@ import './news.component.scss';
 export default function News({ data }) {
     return (
         <div className='main'>
-            <NewsHeader news={data[0]}/>
+            <NewsHeader news={data}/>
             <div>General news</div>
             <div>News with pictures</div>
         </div>

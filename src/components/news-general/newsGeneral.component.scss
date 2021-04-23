@@ -1,0 +1,9 @@
+.general{
+   color: black;
+   &:hover{
+       background-color: #f7f7f7;
+   }
+   .demo{
+       font-style: italic;
+   }
+}
