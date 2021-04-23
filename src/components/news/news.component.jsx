@@ -8,7 +8,7 @@ export default function News({ data }) {
         <div className='main'>
             <NewsHeader news={data} />
             <NewsRow data={data.slice(0,3)}/>
-            <NewsPicturesRow data={data.slice(4,7)}/>
+            <NewsPicturesRow data={data.slice(7,10)}/>
         </div>
     )
 }

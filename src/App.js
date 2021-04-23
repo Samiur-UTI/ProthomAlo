@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import News from './components/news/news.component';
 import './App.scss';
+import Ads from './components/ads/ads.component';
 export default function App() {
     const [data,setData] = useState([]);
     async function bringData (){
@@ -26,6 +27,7 @@ export default function App() {
                 <div className="logo"></div>
                     <div className="content">
                         <News data={data}/>
+                        <Ads/>
                     </div>
                 <div className="footer"></div>            
             </div>
@@ -37,7 +39,9 @@ export default function App() {
                     <div className="content">
                         <h2 className='loading'>News</h2>
                     </div>
-                <div className="footer"></div>            
+                <div className="footer">
+
+                </div>            
             </div>
     )
 }
