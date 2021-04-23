@@ -13,6 +13,9 @@
         height: 75vh;
         border: 2px solid grey;
         grid-template-columns: 3fr 1fr;
+        @media screen and (max-width:480px) {
+            grid-template-rows: 250px;
+        }
     }
     .footer{
         display: block;

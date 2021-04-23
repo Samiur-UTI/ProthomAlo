@@ -1,5 +1,11 @@
+$small: 480px;
+$medium: 900px;
 .main {
     padding-left: 5%;
     display: grid;
-    grid-template-rows: 1.5fr 1fr 2fr;
+    grid-template-rows: repeat(3,200px);
+    @media screen and (max-width:$small) {
+        grid-template-rows: 1fr;
+    }
+
 }
